@@ -8,9 +8,9 @@ import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
 
 const bankAccounts = {
-  bca: { name: "Bank BCA", number: "0312762755", holder: "Zakya Nurussofa", color: "bg-blue-600" },
-  seabank: { name: "SeaBank", number: "901669924108", holder: "Zakya Nurussofa", color: "bg-teal-500" },
-  jago: { name: "Bank Jago", number: "107931474837", holder: "Zakya Nurussofa", color: "bg-red-500" },
+  bca: { name: "Bank BCA", number: "1234567890", holder: "PT. Payment Gateway", color: "bg-blue-600" },
+  seabank: { name: "SeaBank", number: "9876543210", holder: "PT. Payment Gateway", color: "bg-teal-500" },
+  jago: { name: "Bank Jago", number: "5555666677", holder: "PT. Payment Gateway", color: "bg-red-500" },
 }
 
 const eWallets = {
@@ -97,8 +97,8 @@ export function PaymentMethods() {
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-sm">
-                <Smartphone className="h-6 w-6" />
+              <div className="w-12 h-12 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-sm overflow-hidden">
+                <Image src="/icons/ewallet.jpg" alt="E-Wallet icon" width={32} height={32} className="object-contain" />
               </div>
               <div>
                 <CardTitle className="text-lg font-semibold">E-Wallet</CardTitle>
@@ -168,7 +168,7 @@ export function PaymentMethods() {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-xl bg-slate-600 flex items-center justify-center text-white shadow-sm overflow-hidden">
                 <Image
-                  src="/icons/bank.jpg"
+                  src="/icons/bank-transfer.jpg"
                   alt="Bank Transfer icon"
                   width={32}
                   height={32}
@@ -245,7 +245,7 @@ export function PaymentMethods() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-xl bg-indigo-500 flex items-center justify-center text-white shadow-sm overflow-hidden">
-                <Image src="/icons/qris.jpg" alt="QRIS icon" width={32} height={32} className="object-contain" />
+                <Image src="/icons/qris-logo.jpg" alt="QRIS icon" width={32} height={32} className="object-contain" />
               </div>
               <div>
                 <CardTitle className="text-lg font-semibold">QRIS</CardTitle>
@@ -267,7 +267,7 @@ export function PaymentMethods() {
 
           <div className="bg-gradient-to-r from-muted/50 to-muted/30 p-4 rounded-xl border text-center">
             <Image
-              src="/images/qris.code.jpg"
+              src="/images/qris-code.jpg"
               alt="QRIS QR Code"
               width={200}
               height={200}
