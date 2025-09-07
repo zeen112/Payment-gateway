@@ -8,9 +8,9 @@ import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
 
 const bankAccounts = {
-  bca: { name: "Bank BCA", number: "1234567890", holder: "PT. Payment Gateway", color: "bg-blue-600" },
-  seabank: { name: "SeaBank", number: "9876543210", holder: "PT. Payment Gateway", color: "bg-teal-500" },
-  jago: { name: "Bank Jago", number: "5555666677", holder: "PT. Payment Gateway", color: "bg-red-500" },
+  bca: { name: "Bank BCA", number: "0312762755", holder: "Zakya Nurussofa", color: "bg-blue-600" },
+  seabank: { name: "SeaBank", number: "901669924108", holder: "Zakya Nurussofa", color: "bg-teal-500" },
+  jago: { name: "Bank Jago", number: "107931474837", holder: "Zakya Nurussofa", color: "bg-red-500" },
 }
 
 const eWallets = {
