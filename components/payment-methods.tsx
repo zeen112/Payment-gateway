@@ -267,7 +267,7 @@ export function PaymentMethods() {
 
           <div className="bg-gradient-to-r from-muted/50 to-muted/30 p-4 rounded-xl border text-center">
             <Image
-              src="/images/qris-code.jpg"
+              src="/images/qris.code.jpg"
               alt="QRIS QR Code"
               width={200}
               height={200}
